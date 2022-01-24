@@ -10,6 +10,7 @@ async function main() {
 
   const SVGNFT = await ethers.getContractFactory("SVGNFT");
   const svgNft = await SVGNFT.deploy();
+  await svgNft.deployed();
 
   console.log("SVGNFT address:", svgNft.address);
 
